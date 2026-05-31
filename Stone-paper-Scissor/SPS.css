@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /*isse pura center m ajayega*/
+}
+
+h1 {
+    background-color: darkblue;
+    color: white;
+    height: 5rem;
+    line-height: 5rem;
+    /* isse vertically center m ajayega ye better trick h ke short trick*/
+}
+
+.choice {
+    height: 170px;
+    /* ye box jiske andr img ari h us box ki height and width h*/
+    width: 170px;
+    border-radius: 50%;
+    /* sari choice ki border circle m hojayegi jb hover krnge to*/
+    display: flex;
+    justify-content: center;
+    /*ab vo border pura circle m ni ari thi to ye kia ab perfectly ayegi*/
+    align-items: center;
+}
+
+.choice:hover {
+    /* opacity: 0.5; */
+    /* mtlb jaise hi hover kre apni choices pr to thodi blur hojaye*/
+    cursor: pointer;
+    /* mtlb jb hover kre to hamara cursor chng hoke pointer vla type dikhne lge*/
+    background-color: #081b31;
+}
+
+img {
+    height: 150px;
+    /* ye andr ki img ki height and width*/
+    width: 150px;
+    object-fit: cover;
+    /*isse jo img bhut as pas lgrhi thi ya bhut faili ab clear rhegi*/
+    border-radius: 50%;
+    /*circle m ajayega*/
+}
+
+.choices {
+    display: flex;
+    /*ek line mai ajayegi sari choices */
+    justify-content: center;
+    /* horizontally center m ayegi */
+    align-items: center;
+    /*vertically align krne ke liye*/
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.score-board {
+    display: flex;
+    /* ab ham chahte h ki score hamara aur comp ka sth m dikhe upr socre neeche you and usre ke name to sisplay flex se sth m ayega and hoeizontal m center m and vertically center ke liye align*/
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+}
+
+#user-score,
+#comp-score {
+    font-size: 4rem;
+}
+
+.msg-container {
+    margin-top: 5rem;
+}
+
+#msg {
+    background-color: #081b31;
+    color: #fff;
+    font-size: 2rem;
+    display: inline;
+    /*jitne part m hamra text h utne m hi background color and loine chahiye to inline*/
+    padding: 1rem;
+    border-radius: 1rem;
+}
